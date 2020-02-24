@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<div id="myDIV">This is a div element.</div>
+		
+		<script>
+			var x = document.getElementById("myDIV").firstChild;
+			
+			var txt = "";
+			txt += "The node name: " + x.nodeName + "<br>";
+			txt += "The node value: " + x.nodeValue + "<br>";
+			txt += "The node type: " + x.nodeType;
+			
+			document.write(txt);
+		</script>
+
+	</body>
+</html>

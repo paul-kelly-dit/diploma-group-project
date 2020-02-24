@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			em {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<p>Menu</p>
+		<ol id="myMenu">
+			<li id="first"><em>Fresh</em> Coffee</li>
+			<li>Tea</li>
+		</ol>
+		
+		<script>
+			var item1=document.getElementById("first");
+			var txt1=item1.textContent; // returns 'Fresh Coffee’
+			var txt2=item1.innerText; // returns 'Coffee' if a CSS rule hides <em>
+			var txt3=item1.innerHTML; // returns '<em>Fresh</em> Coffee'
+			alert('1) ' + txt1 + ' 2) ' + txt2 + ' 3) ' + txt3);
+		</script>
+
+	</body>
+</html>

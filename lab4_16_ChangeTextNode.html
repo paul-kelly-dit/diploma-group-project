@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<p>Menu</p>
+		<ol id="myMenu">
+			<li id="first">Fresh Coffee</li>
+			<li>Tea</li>
+		</ol>
+		
+		<script>
+			var item1=document.getElementById("first");
+			var txt1=item1.firstChild.nodeValue;
+			txt1=txt1.replace('Fresh', 'Blue Mountain');
+			item1.firstChild.nodeValue = txt1;
+		</script>
+
+	</body>
+</html>
