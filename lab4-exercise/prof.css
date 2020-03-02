@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    font-style: non
+}
+p {
+    margin: 50px;
+    padding: 30px;
+    float: left;
+    width: 400px;
+    border: 20px solid #006633;
+}
