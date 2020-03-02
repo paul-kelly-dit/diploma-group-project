@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<button id="my_button" type="button">Click Me!</button>
+
+		<div id="div1">
+			<p id="p1">This is a paragraph.</p>
+			<p id="p2">This is another paragraph.</p>
+		</div>
+
+		<script>
+			$("my_button").click(function(){
+			$.get({url: "https://jsonplaceholder.typicode.com/posts", success: function(result){
+				$("#div1").html(result);
+			}});
+			});
+		</script>
+
+	</body>
+</html>
